@@ -11,19 +11,22 @@ Rails.application.routes.draw do
   
   resources :users
   resources :topics
+  resources :favorites
+  resources :comments
 
   
-  get 'favorites/index'
-  post '/favorites', to: 'favorites#create'
+  # get 'favorites/index'
+  # post '/favorites', to: 'favorites#create'
   
   
   
-  get 'comments/new'
-  post 'comments', to: 'comments#create'
+  # get 'comments/new'
+  # post 'comments', to: 'comments#create'
   
   get 'information' => 'pages#info'
   
 end 
+
 
 
 
