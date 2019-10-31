@@ -5,8 +5,8 @@
           <h1 class="text-center">Comment</h1>
           <%= form_for @comment do |f| %>
            <div class="form-group">
-             <% f.label :comment %>
-             <% f.text_area :comment, class: "form-control" %>
+             <% f.label :content %>
+             <% f.text_area :content, class: "form-control" %>
            </div>
            <% if logged_in? %>
              <%= f.submit "コメントする", class: "btn btn-black btn-block" %>
