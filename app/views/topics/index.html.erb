@@ -19,7 +19,7 @@
             <% end %>
             <%= topic.favorite_users.count %>
 
-            <%= link_to comments_path(topic_id: topic.id) do %>
+            <%= link_to new_comment_path(topic_id: topic.id) do %>
               <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
             <% end %>
               
@@ -30,7 +30,7 @@
             
             <% topic.comments.each do |comment| %>
             <p class= "topic-text">
-              <%= comment.content %>
+              <%= comment.comment %>
             </p>
             <% end %>
           </div>
